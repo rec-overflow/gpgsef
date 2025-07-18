@@ -38,3 +38,9 @@ jobs:
 
       - name: Build using cargo
         run: cargo tauri build
+
+      - name: Upload target Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: target
+          path: target/
