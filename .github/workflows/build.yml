@@ -39,8 +39,16 @@ jobs:
       - name: Build using cargo
         run: cargo tauri build
 
-      - name: Upload target Artifact
+      - name: Upload bundle Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: target
-          path: target/
+          name: bundle
+          path: target/release/bundle/
+          retention-days: 7
+
+      - name: Upload Portable Executable Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: portable
+          path: target/release/*.exe
+          retention-days: 7
