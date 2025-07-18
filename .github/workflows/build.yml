@@ -33,5 +33,8 @@ jobs:
       - name: Install tools (tauri-cli, warm-bindgen-cli, trunk)
         run: cargo install trunk wasm-bindgen-cli tauri-cli
 
+      - name: Add wasm target
+        run: rustup target add wasm32-unknown-unknown
+
       - name: Build using cargo
         run: cargo tauri build
