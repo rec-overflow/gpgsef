@@ -1,0 +1,17 @@
+@import url("/public/98.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #c0c0c0;
+}
+
+#content {
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  translate: -50% 0;
+  width: 98vw;
+  height: 90vh;
+  font-size: xx-large;
+}
