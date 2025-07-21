@@ -1,0 +1,12 @@
+[package]
+name = "gpgsef"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+#winsafe = { version = "0.0.25", features = ["gui", "comctl", "user"] }
+libui = "0.4.0"
+
+[[bin]]
+name = "gpgsef"
+path = "libui.main.rs"
