@@ -61,7 +61,8 @@ fn create_window(filepath: Option<PathBuf>) {
 
     let mut textfield: MultilineEntry = MultilineEntry::new();
     // textfield.set_readonly(true);
-    textfield.set_value(&decrypt(&filepath));
+    // textfield.set_value(&decrypt(&filepath));
+    textfield.set_value("File -> Reload");
 
     menu_file_reload.on_clicked({
         let filepath = filepath.clone();
